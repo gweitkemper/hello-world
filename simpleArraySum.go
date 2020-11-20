@@ -19,6 +19,5 @@ func promptAndSumArray() {
 	result := simpleArraySum(readLineAsInts(reader, " "))
 	// var stdOut = initFile("/dev/repo/input/simpleArray.json")
 	// writeFile(stdOut, string(result))
-	fmt.Println("The sum is: ")
-	fmt.Println(result)
+	fmt.Println("The sum is: %n", result)
 }

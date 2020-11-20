@@ -2,6 +2,7 @@ package main
 
 func main() {
 	hello()
-	first()
-	multi()
+	promptAndAdd()
+	promptAndMultiply()
+	promptAndSumArray()
 }

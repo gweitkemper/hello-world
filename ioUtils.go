@@ -34,7 +34,7 @@ func readLine(reader *bufio.Reader) string {
 	if err == io.EOF {
 		return ""
 	}
-	var safeString string = string(readLine)
+	safeString := string(readLine)
 	safeString = strings.TrimRight(safeString, "\r\n")
 	safeString = strings.TrimSpace(safeString)
 	return safeString
@@ -70,7 +70,7 @@ func readLineAsInt(reader *bufio.Reader) int {
  */
 func readLineAsInts(reader *bufio.Reader, splitter string) []int {
 	fmt.Println("Please enter an integer array deliniated by spaces:")
-	var readStrings = readLines(reader, splitter)
+	readStrings := readLines(reader, splitter)
 	var parsedInts []int
 	for i := 0; i < len(readStrings); i++ {
 		readString, err := strconv.ParseInt(readStrings[i], 10, 64)

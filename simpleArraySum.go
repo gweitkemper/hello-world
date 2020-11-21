@@ -8,7 +8,7 @@ import "fmt"
 func simpleArraySum(args []int) int {
 	sum := 0
 	for i := 0; i < len(args); i++ {
-		sum = sum + args[i]
+		sum += args[i]
 	}
 	return sum
 }

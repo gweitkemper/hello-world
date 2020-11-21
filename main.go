@@ -1,8 +1,9 @@
 package main
 
 func main() {
-	hello()
-	promptAndAdd()
-	promptAndMultiply()
-	promptAndSumArray()
+	//hello()
+	//promptAndAdd()
+	//promptAndMultiply()
+	//promptAndSumArray()
+	babyArray()
 }

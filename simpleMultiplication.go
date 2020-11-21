@@ -12,5 +12,5 @@ func promptAndMultiply() {
 	a := readLineAsInt(reader)
 	b := readLineAsInt(reader)
 	result := multiply(a, b)
-	fmt.Println("The product is: %n", result)
+	fmt.Println("The product is:", result)
 }

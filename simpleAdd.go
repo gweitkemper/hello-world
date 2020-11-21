@@ -12,5 +12,5 @@ func promptAndAdd() {
 	a := readLineAsInt(reader)
 	b := readLineAsInt(reader)
 	result := add(a, b)
-	fmt.Println("The sum is: %n", result)
+	fmt.Println("The sum is:", result)
 }

@@ -7,7 +7,7 @@ import (
 
 func promptForArrayLength() int {
 	var ar int
-	fmt.Print("How long is the array? (Must be a positive number greater than or equal to 1000)")
+	fmt.Print("How long is the array? (Must be between 1 to 1000) ")
 	_, err := fmt.Scanf("%d", &ar)
 	if err != nil {
 		fmt.Print(err)
@@ -19,9 +19,9 @@ func promptForArrayLength() int {
 	return ar
 }
 
-func populateArray(i int) []int {
-	fmt.Printf("Please enter %d integers separated by spaces.", ar)
-	array := make([]int, i)
+func populateArray(arraySize int) []int {
+	fmt.Printf("Please enter %d integers separated by spaces: ", arraySize)
+	array := make([]int, arraySize)
 	for i := 0; i < len(array); i++ {
 		fmt.Scanf("%d", &array[i])
 	}
@@ -32,9 +32,9 @@ func babyArray() {
 	// Would this be batter as populateArray(promptForArrayLength())?
 	arLen := promptForArrayLength()
 	array := populateArray(arLen)
-	for i := 0, i < len(array), i++ {
+	sum := 0
+	for i := 0; i < len(array); i++ {
 		sum += array[i]
 	}
-	fmt.Print(j)
+	fmt.Print(sum)
 }
-

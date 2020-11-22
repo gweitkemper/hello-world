@@ -5,4 +5,5 @@ func main() {
 	promptAndAdd()
 	promptAndMultiply()
 	promptAndSumArray()
+	guessingGame()
 }

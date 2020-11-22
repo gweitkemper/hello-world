@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-func main() {
+func guessingGame() {
 	//Introduce the game
 	fmt.Println("I'm thinking of a number between 1 and 100, can you guess it?")
 	//Generate a random number between 1 and 100

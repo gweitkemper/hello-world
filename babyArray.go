@@ -5,6 +5,7 @@ import (
 	"os"
 )
 
+// How do I enforce only one int as input?
 func promptForArrayLength() int {
 	var ar int
 	fmt.Print("How long is the array? (Must be between 1 to 1000) ")
@@ -19,9 +20,10 @@ func promptForArrayLength() int {
 	return ar
 }
 
-func populateArray(arraySize int) []int {
-	fmt.Printf("Please enter %d integers separated by spaces: ", arraySize)
-	array := make([]int, arraySize)
+// How do I enforce entered ints match the length specified in promptForArrayLength?
+func populateArray(arrayLength int) []int {
+	fmt.Printf("Please enter %d integers separated by spaces: ", arrayLength)
+	array := make([]int, arrayLength)
 	for i := 0; i < len(array); i++ {
 		fmt.Scanf("%d", &array[i])
 	}
@@ -30,11 +32,11 @@ func populateArray(arraySize int) []int {
 
 func babyArray() {
 	// Would this be batter as populateArray(promptForArrayLength())?
-	arLen := promptForArrayLength()
-	array := populateArray(arLen)
+	arrayLength := promptForArrayLength()
+	array := populateArray(arrayLength)
 	sum := 0
 	for i := 0; i < len(array); i++ {
 		sum += array[i]
 	}
-	fmt.Print(sum)
+	fmt.Print("Your sum is: ", sum)
 }

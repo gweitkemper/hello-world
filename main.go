@@ -4,6 +4,5 @@ func main() {
 	//hello()
 	//promptAndAdd()
 	//promptAndMultiply()
-	//promptAndSumArray()
-	babyArray()
+	promptAndSumArray()
 }

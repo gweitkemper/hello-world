@@ -40,5 +40,8 @@ func simpleArraySum(args []int) int {
 
 func promptAndSumArray() {
 	fmt.Println("Let's sum an integer array!")
-	fmt.Print("Your sum is: ", simpleArraySum(populateArray(promptForArrayLength())))
+	length := promptForArrayLength()
+	array := populateArray(length)
+	sum := simpleArraySum(array)
+	fmt.Print("Your sum is: ", sum)
 }

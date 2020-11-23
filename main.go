@@ -1,9 +1,9 @@
 package main
 
 func main() {
-	hello()
-	promptAndAdd()
-	promptAndMultiply()
+	//hello()
+	//promptAndAdd()
+	//promptAndMultiply()
 	promptAndSumArray()
 	guessingGame()
 }

@@ -26,6 +26,10 @@ func initReader() *bufio.Reader {
 	return bufio.NewReaderSize(os.Stdin, 1024*1024)
 }
 
+func initWriter() *bufio.Writer {
+	return bufio.NewWriter(os.Stdout)
+}
+
 /*
  * TODO: document and unit test
  */

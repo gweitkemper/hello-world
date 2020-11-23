@@ -9,11 +9,12 @@ import (
   "bufio"
 )
 
+//declaring global variables
 var input string
 var grade float64
 
-func main(){
-  //create a new reader
+func pF(){
+  //order of functions
   gradeInput()
   rubric(grade)
   rerun()
@@ -38,6 +39,7 @@ func gradeInput (){
   }
 
 func rubric(gr float64){
+  //compare grade entered to grading scale
   if gr >= 60{
     fmt.Println("Congratulations! You passed.")
   } else {
@@ -46,6 +48,7 @@ func rubric(gr float64){
 }
 
 func rerun(){
+  //allow user to enter additional grades
   fmt.Println("Would you like to enter another grade? (y/n)")
   reader := bufio.NewReader(os.Stdin)
   input, err := reader.ReadString('\n')
@@ -55,7 +58,7 @@ func rerun(){
     }
     input = strings.TrimSpace(input)
     if input == "y"{
-      main()
+      pF()
     } else {
       fmt.Println("Thanks for using passFail.go!")
     }

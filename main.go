@@ -4,6 +4,7 @@ func main() {
 	//hello()
 	//promptAndAdd()
 	//promptAndMultiply()
-	promptAndSumArray()
-	guessingGame()
+	//promptAndSumArray()
+	//guessingGame()
+	passFail()
 }
